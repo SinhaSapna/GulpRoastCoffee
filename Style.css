@@ -1,0 +1,293 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.Top {
+    background-image: url(assets/MacBook\ Air\ -\ 7.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+    height: 900px;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 1% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width:150px;
+    height:110px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    padding: 8px 12px;
+}
+.nav-links ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+.nav-links a:hover {
+    background-color: #ddd;
+    color: black;
+}
+.TextArea{
+    color: white;
+    position: absolute;
+    top: 30%;
+    left: 6%;
+}
+.TextArea h1{
+    font-size: 52px;
+}
+.TextArea h3{
+    font-size: 32px;
+}
+.TextArea p{
+    font-size: 24px;
+}
+.Hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 15px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.Hero-btn:hover{
+    border: 1px solid #D98555 ;
+    background: #D98555;
+    transition: 1s;
+}
+nav .fa{
+    display: none;
+}
+
+.AboutUs {
+    background-image: url(assets/MacBook\ Air\ -\ 8.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+    height: 1000px;
+    position: relative;
+}
+.AboutContainer{
+    width: 400px;
+    height: 700px;
+    position: absolute;
+    top: 100px;
+    left: 900px;
+    border-radius: 10px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(8, 43, 89, 0.703);
+}
+.AboutContainer h1{
+    font-size: 52px;
+}
+.AboutContainer p{
+    font-size: 22px;
+}
+
+.ContactBtn{
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    border: 1px solid #000000;
+    padding: 12px 34px;
+    font-size: 20px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.ContactBtn:hover{
+    border: 1px solid #D98555 ;
+    background: #D98555;
+    transition: 1s;
+}
+.ProductContainer{
+    width: 100%;
+    height: 832px;
+}
+.ProductText{
+    text-align: center;
+    margin: 20px;
+    padding-top: 40px;
+    font-size: 40px;
+}
+.container-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container-card {
+    width: 400px;
+    height: 600px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(8, 43, 89, 0.795);
+    margin: 20px;
+  }
+  
+  .image-container {
+    height: 50%;
+    overflow: hidden;
+    margin-bottom: 0px;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .text-container {
+    padding: 20px;
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #082B59;
+  }
+  
+  .text-container h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: white;
+  }
+  
+  .text-container p {
+    font-size: 17px;
+    color: #ffffff;
+  }
+  .CONTACT{
+    position: relative;
+    height: 832px;
+    padding: 20px;
+  }
+
+  .ContactUs {
+    width: 50%;
+    height: 783px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .ShopImage {
+    height: 500px;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  
+  .ShopImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .ShopAddress {
+    padding: 40px;
+    height: 200px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #082B59;
+  }
+  
+  .ShopAddress h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: white;
+  }
+  
+  .ShopAddress p {
+    font-size: 20px;
+    color: white;
+  }
+  .contact-us-form {
+    position: absolute;
+    top: 50%;
+    right: 100px;
+    transform: translateY(-50%);
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    height: 500px;
+  }
+  
+  .contact-us-form h2 {
+    font-size: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  
+  .form-group {
+    margin-bottom: 30px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button[type="submit"] {
+    background-color: #082B59;
+    color: #fff;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #05487a;
+  }
+  .Footer{
+    width: 100%;
+    text-align: center;
+    font-size: 10px;
+  }
+  .FACEBOOK{
+    padding-right: 20px;
+    width: 50px;
+    height: 50px;
+  }
+  .Instagram{
+    padding-left: 20px;
+    width: 50px;
+    height: 50px;
+  }
