@@ -10,39 +10,39 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
 </head>
 <body>
-    <section class="Top">
-        <nav>
-            <a href=" https://uxuicurriculum.wixsite.com/gulproast."> <img src="https://assets.codepen.io/6306176/gulp-logo-dark.png"></a>
-            <div class="nav-links" id="navLinks">
-                <i class="fa fa-times" onclick="hideMenu()"></i>
-                    <ul>
-                        <li><a href="">Home</a></li>
-                        <li><a href="">About</a></li>
-                        <li><a href="">Products</a></li>
-                        <li><a href="">Contact</a></li>
-                    </ul>
-            </div>
-            <i class="fa fa-bars" onclick="showMenu()"></i>
-        </nav>
+    <section id="home" class="Top">
+      <div class="NavBar">
+        <div class="Nav">
+            <a href="#home"> <img src="https://assets.codepen.io/6306176/gulp-logo-dark.png" height="90" width="137"></a>
+        </div>
+        <div class="nav-links" id="navLinks">
+                <ul>
+                     <li><a href="#home">Home</a></li>
+                     <li><a href="#aboutus">About</a></li>
+                     <li><a href="#productcontainer">Products</a></li>
+                     <li><a href="#contact">Contact</a></li>
+                </ul>
+        </div>
+       </div>   
         <div class="TextArea">
-            <h1>There's nothing quite like<br> enjoying that perfect cup <br>of coffee</h1><br>
-            <h3>Our coffee brightens your days—one sip<br> at a time.</h3><br>
-            <p>Join us at our cafe, or order our beans online.<br> Either way, you're bound to improve your day!</p><br><br>
-            <a href="" class="Hero-btn">View our coffee</a>
+            <h1>There's nothing quite like enjoying that perfect cup of coffee</h1><br>
+            <h3>Our coffee brightens your days—one sip at a time.</h3><br>
+            <p>Join us at our cafe, or order our beans online. Either way, you're bound to improve your day!</p><br><br>
+            <a href="#productcontainer" class="Hero-btn">View our coffee</a>
         </div>
     </section>
     <!-----About Us Section-->
-    <section class="AboutUs">
+    <section id="aboutus" class="AboutUs">
         <div class="AboutContainer">
             <h1>About Us</h1><br>
-            <p>Life without coffee is a gloomy place. That’s why Gulp Roast has been proudly serving up fresh coffee to the San Francisco area (link to https://goo.gl/maps/3rAyszfwSDx8Si2Y9) since 2000. <br><br>Our coffee is locally sourced with the most delicious blends coming directly to your home, right from coffee farmers near you. Our coffee makes even the most difficult days just a tad easier to get through.
+            <p>Life without coffee is a gloomy place. That’s why Gulp Roast has been proudly serving up fresh coffee to the <a href="https://www.google.com/maps/place/Administrative+Offices+Dean/data=!4m7!3m6!1s0x808f7f069f58a281:0xfe36c80485041e0c!8m2!3d37.7371582!4d-122.3943331!16s%2Fg%2F11_p_wk54!19sChIJgaJYnwZ_j4ARDB4EhQTINv4?authuser=0&hl=en&rclk=1">San Francisco area</a> since 2000. <br><br>Our coffee is locally sourced with the most delicious blends coming directly to your home, right from coffee farmers near you. Our coffee makes even the most difficult days just a tad easier to get through.
                 For us, this isn’t just brewing coffee. <br><br>This is an active life mission to bring our customers the most flavorful, full-bodied beverages we can get our hands on. Browse our site to learn more about our locations and sourcing techniques.
             </p><br><br>
-            <a href="" class="ContactBtn">Contact Us</a>
+            <a href="#contact" class="ContactBtn">Contact Us</a>
         </div>
     </section>
     <!--- Our Product Section-->
-    <section class="ProductContainer">
+    <section id="productcontainer" class="ProductContainer">
         <div class="ProductText">
             <h1>Our Product</h1>
         </div>
@@ -76,7 +76,7 @@
             </div>
           </div>
     </section>
-    <section class="CONTACT">
+    <section id="contact" class="CONTACT">
         <div class="ContactUs">
                 <div class="ShopImage">
                   <img src="https://assets.codepen.io/6306176/gulp-menu.jpg" alt="Image">
@@ -120,16 +120,5 @@
        </div>
 
     </section>
-
-<!---JavaScript for toggle menu---->
-<script>
-    var navLinks= document.getElementById("navLinks");
-    function showMenu(){
-        navLinks.style.right="0";
-    }
-    function hideMenu(){
-        navLinks.style.right="-200px";
-    }
-</script>
 </body>
 </html>

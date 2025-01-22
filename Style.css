@@ -3,71 +3,86 @@
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
+html{
+  scroll-behavior: smooth;
+}
 
 .Top {
-    background-image: url(assets/MacBook\ Air\ -\ 7.png);
+    display: grid;
+    gap: 10px;
+    background-image: url(https://static.wixstatic.com/media/11062b_ca88a6f079324d7c98963f33c1f2d48f~mv2.jpg/v1/fill/w_771,h_428,fp_0.50_0.50,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_ca88a6f079324d7c98963f33c1f2d48f~mv2.jpg);
     background-size: cover;
-    background-position: center;
     background-repeat: no-repeat;
-    box-sizing: border-box;
-    padding-left: 0;
-    padding-right: 0;
     width: 100%;
-    height: 900px;
-    position: relative;
+    height: 950px; 
 }
-nav{
-    display: flex;
-    padding: 1% 6%;
-    justify-content: space-between;
-    align-items: center;
+.NavBar{
+  display: grid;
+  height: 90px;
+  width: 100%;
+  background-color: #ffffff;
+  position: fixed;
+  z-index: 9999;
+  top: 0px;
 }
-nav img{
-    width:150px;
-    height:110px;
+.Nav{
+    grid-column: 1 / span 1;
+    grid-row: 1;
+    margin-left: 90px;
 }
 .nav-links{
-    flex: 1;
-    text-align: right;
-}
+    padding: 20px;
+    grid-column: 2/span 2;
+    grid-row: 1;
+  
+  }
 .nav-links ul li{
     list-style: none;
     display: inline-block;
-    position: relative;
-    padding: 8px 12px;
+    padding: 10px 80px;
 }
 .nav-links ul li a{
-    color: white;
+    color: rgb(0, 0, 0);
     text-decoration: none;
-    font-size: 14px;
+    font-size: 20px;
 }
 .nav-links a:hover {
-    background-color: #ddd;
+    background-color: #ffffff;
     color: black;
 }
 .TextArea{
     color: white;
-    position: absolute;
-    top: 30%;
-    left: 6%;
+    grid-column: 2 / span 1;
+    grid-row: 2;
+    text-align: center;
+    box-sizing: border-box;
+    height: 400px;
+    width: 900px;
+    padding: 10px;
+    background: rgba(8, 43, 89, 0.51);
+    box-shadow: 0 0 10px rgb(8, 43, 89);
+    border-radius: 10px;
+    border-style: double;
+   
 }
 .TextArea h1{
-    font-size: 52px;
+  margin-top: 80px;
+    font-size: 40px;
 }
 .TextArea h3{
-    font-size: 32px;
+    font-size: 25px;
 }
 .TextArea p{
-    font-size: 24px;
+    font-size: 20px;
 }
 .Hero-btn{
     display: inline-block;
     text-decoration: none;
-    color: white;
+    color: rgb(0, 0, 0);
     border: 1px solid #fff;
     padding: 12px 34px;
     font-size: 15px;
-    background: transparent;
+    background: white;
     position: relative;
     cursor: pointer;
 }
@@ -76,9 +91,7 @@ nav img{
     background: #D98555;
     transition: 1s;
 }
-nav .fa{
-    display: none;
-}
+
 
 .AboutUs {
     background-image: url(assets/MacBook\ Air\ -\ 8.png);
@@ -93,28 +106,31 @@ nav .fa{
     position: relative;
 }
 .AboutContainer{
-    width: 400px;
-    height: 700px;
+    width: 700px;
+    height: 500px;
     position: absolute;
-    top: 100px;
-    left: 900px;
-    border-radius: 10px;
-    padding: 25px;
+    top: 200px;
+    right: 100px;
+    border-radius: 30px;
+    padding: 90px;
     text-align: center;
-    box-shadow: 0 0 10px rgba(8, 43, 89, 0.703);
+    box-shadow: 0 0 10px rgba(8, 43, 89, 0.914);
+    background-color: #082B59;
 }
 .AboutContainer h1{
     font-size: 52px;
+    color: white;
 }
 .AboutContainer p{
     font-size: 22px;
+    color: white;
 }
 
 .ContactBtn{
     display: inline-block;
     text-decoration: none;
-    color: rgb(0, 0, 0);
-    border: 1px solid #000000;
+    color: rgb(255, 255, 255);
+    border: 1px solid #ffffff;
     padding: 12px 34px;
     font-size: 20px;
     background: transparent;
@@ -230,13 +246,13 @@ nav .fa{
   .contact-us-form {
     position: absolute;
     top: 50%;
-    right: 100px;
+    right: 300px;
     transform: translateY(-50%);
     background-color: #fff;
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.391);
     width: 500px;
     height: 500px;
   }
@@ -291,3 +307,24 @@ nav .fa{
     width: 50px;
     height: 50px;
   }
+  
+@media(max-width:1261px){
+
+.AboutContainer{
+    width: 400px;
+    height: 600px;
+    position: absolute;
+    top: 50px;
+    left: 700px;
+    border-radius: 30px;
+    padding: 90px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(8, 43, 89, 0.914);
+    background-color: #082B59;
+}
+.contact-us-form {
+  right: 40px;
+  }
+}
+
+ 
